@@ -3,41 +3,47 @@
   <head>
 
     <title>MURAKAMI</title>
-
+    <script src = "https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+      $(window).on('scroll',function() {
+        if($(window).scrollTop()) {
+          $('nav').addClass('black');
+        }
+      else {
+        $('nav').removeClass('black');
+      }
+    })
+    </script>
     <link rel="stylesheet" href="style.css">
 
   </head>
 
 <body>
-  <header>
-
-    <div id='logo'>
-      <h3>MURAKAMI</h3>
-    </div>
-
-      <ul id='main_menu'>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">MURAKMI</div>
+      <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="Author.html">AUTHOR</a></li>
         <li><a href="WORKS.html">WORKS</a></li>
         <li><a href="RESOURCES.html">RESOURCES</a></li>
       </ul>
-  </header>
+    </nav>
+  </div>
 
-  <section id= 'main_img'>
+  <div id= 'main_img'>
 
-  </section>
+  </div>
 
   <div id='contents'>
-    <nav id='sub_menu'>
+    <div id='sub_menu'>
       <h3>Best Haruki Books</h3>
-      <ul>
         <li><a href="sheep.html">A Wild Sheep Chase</a></li>
         <li><a href="bird.html">The Wind-Up Bird Chronicle</a></li>
         <li><a href="wonderland.html">Hard-Boiled Wonderland and the End of the World</a></li>
         <li><a href="1q84.html">1Q84</a></li>
         <li><a href="tazaki.html">Colorless Tsukuru Tazaki and His Years of Pilgrimage</a></li>
-      </ul>
-    </nav>
+    </div>
     <div id='main_contents'>
       <h3>1Q84</h3>
       <p><img src="1q84.jpg" align="right">The massive new novel from international sensation Murakami (What I Talk About When I Talk About Running) sold out in his native Japan, where it was released in three volumes, and is bound to provoke a similar reaction in America, where rabid fans are unlikely to be deterred by its near thousand-page bulk. Nor should they be; Murakami’s trademark plainspoken oddness is on full display in this story of lapsed childhood friends Aomame and Tengo, now lonely adults in 1984 Tokyo, whose destinies may be curiously intertwined. Aomame is a beautiful assassin working exclusively for a wealthy dowager who targets abusive men. Meanwhile Tengo, an unpublished writer and mathematics instructor at a cram school, accepts an offer to write a novel called Air Chrysalis based on a competition entry written by an enigmatic 17-year-old named Fuka-Eri. Fuka-Eri proves to be dangerously connected to the infamous Sakigake cult, whose agents are engaged in a bloody game of cat-and-mouse with Aomame. Even stranger is that two moons have appeared over Tokyo, the dawning of a parallel time line known as 1Q84 controlled by the all-powerful Little People. The condensing of three volumes into a single tome makes for some careless repetition, and casual readers may feel that what actually occurs doesn’t warrant such length. But Murakami’s fans know that his focus has always been on the quiet strangeness of life, the hidden connections between perfect strangers, and the power of the non sequitur to reveal the associative strands that weave our modern world. 1Q84 goes further than any Murakami novel so far, and perhaps further than any novel before it, toward exposing the delicacy of the membranes that separate love from chance encounters, the kind from the wicked, and reality from what people living in the pent-up modern world dream about when they go to sleep under an alien moon. (Oct.)
@@ -47,4 +53,3 @@
 
 </body>
 
-</html>
